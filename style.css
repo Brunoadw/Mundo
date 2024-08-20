@@ -1,0 +1,940 @@
+body {
+    position: relative;
+    width: 207vh;
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+    background-color: rgb(16, 16, 17);
+}
+
+.imagem {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    bottom: 0;
+} 
+
+h1{
+    text-align: center;
+    color: rgb(12, 175, 216);
+}
+
+p, li{
+    text-align: start;
+    color: rgb(12, 175, 216);
+    cursor: auto;
+}
+
+.americanortetxt.hovered{
+    opacity: 0.2;
+}
+
+.americasultxt.hovered{
+    opacity: 0.2;
+}
+
+.africatxt.hovered{
+    opacity: 0.2;
+}
+
+.asiatxt.hovered{
+    opacity: 0.2;
+}
+
+.oceaniatxt.hovered{
+    opacity: 0.2;
+}
+
+.europatxt.hovered{
+    opacity: 0.2;
+}
+
+.oceania.hovered{
+    opacity: 0.2;
+}
+
+/*america do sul*/
+.americasul{
+    position: absolute; 
+    width: 3vh;
+    height: 3vh;
+    bottom: 25vh;
+    left: 62vh;
+    border-radius: 50%;
+    transition: 2s;
+}
+
+.americasultxt{
+    position: absolute;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    background-color: rgb(12, 175, 216);
+    border: solid 2px rgb(12, 175, 216);
+    transition: background-color 5s, height 2s, width 2s }
+
+.americasulimgdiv, .americasulstart{
+    position: absolute;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.americasulimg{
+    width: 0;
+    height: 0;
+}
+
+.americasul:hover{
+    border-radius: 10%;
+    width: 100vh;
+    height: 50vh;
+    transition: 2s;
+}
+
+.americasul:hover >.americasultxt{
+    position: absolute;
+    left: -5vh;
+    width: 50vh;
+    height : 50vh;
+    border-radius: 0;
+    background-color: rgb(0, 0, 0, 0.8);
+    font-size: 80%;
+    transition: 2s;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 2vh;
+    overflow: auto;
+    border-top-left-radius:10%;
+    border-bottom-left-radius:10%;
+}
+
+.americasultxt::-webkit-scrollbar{
+    width: 2vh;
+}
+
+.americasul:hover > .africatetxt::-webkit-scrollbar{
+    transition: 2s;
+    width: 2vh;
+}
+
+.americasul:hover > .americasultxt::-webkit-scrollbar-thumb{
+    background:rgb(12, 175, 216) ;
+}
+
+.americasul:hover > .americasulimgdiv{
+    position: absolute;
+    width: 50vh;
+    height: 34vh;
+    right: 0;
+    border: solid 2px rgb(12, 175, 216);
+    border-top-right-radius:10%;
+}
+
+.americasul:hover > .americasulimgdiv .americasulimg{
+    width: 50vh;
+    height: 34vh;
+    border-top-right-radius:10%;
+}
+
+.americasul:hover > .americasulstart{
+    position: absolute;
+    width: 48vh;
+    height: 18vh;
+    padding: 1vh;
+    right: 0;
+    bottom: -4.6vh;
+    border: solid 2px rgb(12, 175, 216);
+    border-bottom-right-radius:10%;
+    background-color: rgb(0, 0, 0, 0.8);
+    font-size: 80%;
+}
+
+.americasulicone{
+    opacity: 0;
+}
+
+.americasul:hover > .americasulstart .americasulicone{
+    opacity: 1;
+}
+
+.africadetalhes{
+ width: 0;
+ height: 0;
+ opacity: 0;   
+}
+
+.americasul:hover > .americasulstart .americasuldetalhes{
+    opacity: 1;
+    position: absolute;
+    right: -0.2%;
+    bottom: 0%;
+    padding: 2px;
+    width: 98.5%;
+    height: 3vh;
+    text-decoration: none;
+    color: rgb(12, 175, 216);
+    text-align: center;
+}
+
+.americasulhr{
+    opacity: 0;
+}
+
+.americasul:hover > .americasulstart .americasulhr{
+    opacity: 1;
+    height: 0;
+    right: -0.6%;
+    width: 100%;
+    position: absolute;
+    border: solid 1px rgb(12, 175, 216);
+    bottom: 3vh;
+}
+
+
+/*america do norte*/
+.americanorte{
+    position: absolute; 
+    width: 3vh;
+    height: 3vh;
+    top: 30vh;
+    left: 38vh;
+    border-radius: 50%;
+    transition: 2s;
+}
+
+.americanortetxt{
+    position: absolute;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    background-color: rgb(12, 175, 216);
+    border: solid 2px rgb(12, 175, 216);
+    transition: background-color 5s, height 2s, width 2s }
+
+.americanorteimgdiv, .americanortestart{
+    position: absolute;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.americanorteimg{
+    width: 0;
+    height: 0;
+}
+
+.americanorte:hover{
+    border-radius: 10%;
+    width: 100vh;
+    height: 50vh;
+    transition: 2s;
+}
+
+.americanorte:hover >.americanortetxt{
+    position: absolute;
+    left: -5vh;
+    width: 50vh;
+    height : 50vh;
+    border-radius: 0;
+    background-color: rgb(0, 0, 0, 0.8);
+    font-size: 80%;
+    transition: 2s;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 2vh;
+    overflow: auto;
+    border-top-left-radius:10%;
+    border-bottom-left-radius:10%;
+}
+
+.americanortetxt::-webkit-scrollbar{
+    width: 0vh;
+}
+
+.americanorte:hover > .americanortetxt::-webkit-scrollbar{
+    transition: 2s;
+    width: 2vh;
+}
+
+.americanorte:hover > .americanortetxt::-webkit-scrollbar-thumb{
+    background:rgb(12, 175, 216) ;
+}
+
+.americanorte:hover > .americanorteimgdiv{
+    position: absolute;
+    width: 50vh;
+    height: 34vh;
+    right: 0;
+    border: solid 2px rgb(12, 175, 216);
+    border-top-right-radius:10%;
+}
+
+.americanorte:hover > .americanorteimgdiv .americanorteimg{
+    width: 50vh;
+    height: 34vh;
+    border-top-right-radius:10%;
+}
+
+.americanorte:hover > .americanortestart{
+    position: absolute;
+    width: 48vh;
+    height: 18vh;
+    padding: 1vh;
+    right: 0;
+    bottom: -4.6vh;
+    border: solid 2px rgb(12, 175, 216);
+    border-bottom-right-radius:10%;
+    background-color: rgb(0, 0, 0, 0.8);
+    font-size: 80%;
+}
+
+.americanorteicone{
+    opacity: 0;
+}
+
+.americanorte:hover > .americanortestart .americanorteicone{
+    opacity: 1;
+}
+
+.americanortedetalhes{
+ width: 0;
+ height: 0;
+ opacity: 0;   
+}
+
+.americanorte:hover > .americanortestart .americanortedetalhes{
+    opacity: 1;
+    position: absolute;
+    right: -0.2%;
+    bottom: 0%;
+    padding: 2px;
+    width: 98.5%;
+    height: 3vh;
+    text-decoration: none;
+    color: rgb(12, 175, 216);
+    text-align: center;
+}
+
+.americanortehr{
+    opacity: 0;
+}
+
+.americanorte:hover > .americanortestart .americanortehr{
+    opacity: 1;
+    height: 0;
+    right: -0.6%;
+    width: 100%;
+    position: absolute;
+    border: solid 1px rgb(12, 175, 216);
+    bottom: 3vh;
+}
+
+/*africa*/
+.africa{
+    position: absolute; 
+    width: 3vh;
+    height: 3vh;
+    bottom: 45vh;
+    left: 106vh;
+    border-radius: 50%;
+    transition: 2s;
+}
+
+.africatxt{
+    position: absolute;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    background-color: rgb(12, 175, 216);
+    border: solid 2px rgb(12, 175, 216);
+    transition: background-color 5s, height 2s, width 2s }
+
+.africaimgdiv, .africastart{
+    position: absolute;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.africaimg{
+    width: 0;
+    height: 0;
+}
+
+.africa:hover{
+    border-radius: 10%;
+    width: 100vh;
+    height: 50vh;
+    transition: 2s;
+}
+
+.africa:hover >.africatxt{
+    position: absolute;
+    left: -5vh;
+    width: 50vh;
+    height : 50vh;
+    border-radius: 0;
+    background-color: rgb(0, 0, 0, 0.8);
+    font-size: 80%;
+    transition: 2s;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 2vh;
+    overflow: auto;
+    border-top-left-radius:10%;
+    border-bottom-left-radius:10%;
+}
+
+.africatxt::-webkit-scrollbar{
+    width: 2vh;
+}
+
+.africa:hover > .africatetxt::-webkit-scrollbar{
+    transition: 2s;
+    width: 2vh;
+}
+
+.africa:hover > .africatxt::-webkit-scrollbar-thumb{
+    background:rgb(12, 175, 216) ;
+}
+
+.africa:hover > .africaimgdiv{
+    position: absolute;
+    width: 50vh;
+    height: 34vh;
+    right: 0;
+    border: solid 2px rgb(12, 175, 216);
+    border-top-right-radius:10%;
+}
+
+.africa:hover > .africaimgdiv .africaimg{
+    width: 50vh;
+    height: 34vh;
+    border-top-right-radius:10%;
+}
+
+.africa:hover > .africastart{
+    position: absolute;
+    width: 48vh;
+    height: 18vh;
+    padding: 1vh;
+    right: 0;
+    bottom: -4.6vh;
+    border: solid 2px rgb(12, 175, 216);
+    border-bottom-right-radius:10%;
+    background-color: rgb(0, 0, 0, 0.8);
+    font-size: 80%;
+}
+
+.africaicone{
+    opacity: 0;
+}
+
+.africa:hover > .africastart .africaicone{
+    opacity: 1;
+}
+
+.africadetalhes{
+ width: 0;
+ height: 0;
+ opacity: 0;   
+}
+
+.africa:hover > .africastart .africadetalhes{
+    opacity: 1;
+    position: absolute;
+    right: -0.2%;
+    bottom: 0%;
+    padding: 2px;
+    width: 98.5%;
+    height: 3vh;
+    text-decoration: none;
+    color: rgb(12, 175, 216);
+    text-align: center;
+}
+
+.africahr{
+    opacity: 0;
+}
+
+.africa:hover > .africastart .africahr{
+    opacity: 1;
+    height: 0;
+    right: -0.6%;
+    width: 100%;
+    position: absolute;
+    border: solid 1px rgb(12, 175, 216);
+    bottom: 3vh;
+}
+
+/*asia*/
+.asia{
+    position: absolute; 
+    width: 3vh;
+    height: 3vh;
+    top: 27vh;
+    right: 59vh;
+    border-radius: 50%;
+    transition: 2s;
+}
+
+.asiatxt{
+    position: absolute;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    background-color: rgb(12, 175, 216);
+    border: solid 2px rgb(12, 175, 216);
+    transition: background-color 5s, height 2s, width 2s }
+
+.asiaimgdiv, .asiastart{
+    position: absolute;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.asiaimg{
+    width: 0;
+    height: 0;
+}
+
+.asia:hover{
+    border-radius: 10%;
+    width: 100vh;
+    height: 50vh;
+    transition: 2s;
+}
+
+.asia:hover >.asiatxt{
+    position: absolute;
+    left: -5vh;
+    width: 50vh;
+    height : 50vh;
+    border-radius: 0;
+    background-color: rgb(0, 0, 0, 0.8);
+    font-size: 80%;
+    transition: 2s;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 2vh;
+    overflow: auto;
+    border-top-left-radius:10%;
+    border-bottom-left-radius:10%;
+}
+
+.asiatxt::-webkit-scrollbar{
+    width: 0vh;
+}
+
+.asia:hover > .asiatxt::-webkit-scrollbar{
+    transition: 2s;
+    width: 2vh;
+}
+
+.asia:hover > .asiatxt::-webkit-scrollbar-thumb{
+    background:rgb(12, 175, 216) ;
+}
+
+.asia:hover > .asiaimgdiv{
+    position: absolute;
+    width: 50vh;
+    height: 34vh;
+    right: 0;
+    border: solid 2px rgb(12, 175, 216);
+    border-top-right-radius:10%;
+}
+
+.asia:hover > .asiaimgdiv .asiaimg{
+    width: 50vh;
+    height: 34vh;
+    border-top-right-radius:10%;
+}
+
+.asia:hover > .asiastart{
+    position: absolute;
+    width: 48vh;
+    height: 18vh;
+    padding: 1vh;
+    right: 0;
+    bottom: -4.6vh;
+    border: solid 2px rgb(12, 175, 216);
+    border-bottom-right-radius:10%;
+    background-color: rgb(0, 0, 0, 0.8);
+    font-size: 80%;
+}
+
+.asiaicone{
+    opacity: 0;
+}
+
+.asia:hover > .asiastart .asiaicone{
+    opacity: 1;
+}
+
+.asiadetalhes{
+ width: 0;
+ height: 0;
+ opacity: 0;   
+}
+
+.asia:hover > .asiastart .asiadetalhes{
+    opacity: 1;
+    position: absolute;
+    right: -0.2%;
+    bottom: 0%;
+    padding: 2px;
+    width: 98.5%;
+    height: 3vh;
+    text-decoration: none;
+    color: rgb(12, 175, 216);
+    text-align: center;
+}
+
+.asiahr{
+    opacity: 0;
+}
+
+.asia:hover > .asiastart .asiahr{
+    opacity: 1;
+    height: 0;
+    right: -0.6%;
+    width: 100%;
+    position: absolute;
+    border: solid 1px rgb(12, 175, 216);
+    bottom: 3vh;
+}
+
+/*Europa*/
+.europa{
+    position: absolute; 
+    width: 3vh;
+    height: 3vh;
+    top: 22vh;
+    left: 115vh;
+    border-radius: 50%;
+    transition: 2s;
+}
+
+.europatxt{
+    position: absolute;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    background-color: rgb(12, 175, 216);
+    border: solid 2px rgb(12, 175, 216);
+    transition: background-color 5s, height 2s, width 2s }
+
+.europaimgdiv, .europastart{
+    position: absolute;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.europaimg{
+    width: 0;
+    height: 0;
+}
+
+.europa:hover{
+    border-radius: 10%;
+    width: 100vh;
+    height: 50vh;
+    transition: 2s;
+    left: 50%;
+}
+
+.europa:hover >.europatxt{
+    position: absolute;
+    left: -5vh;
+    width: 50vh;
+    height : 50vh;
+    border-radius: 0;
+    background-color: rgb(0, 0, 0, 0.8);
+    font-size: 80%;
+    transition: 2s;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 2vh;
+    overflow: auto;
+    border-top-left-radius:10%;
+    border-bottom-left-radius:10%;
+}
+
+.europatxt::-webkit-scrollbar{
+    width: 0vh;
+}
+
+.europa:hover > .europatxt::-webkit-scrollbar{
+    transition: 2s;
+    width: 2vh;
+}
+
+.europa:hover > .europatxt::-webkit-scrollbar-thumb{
+    background:rgb(12, 175, 216) ;
+}
+
+.europa:hover > .europaimgdiv{
+    position: absolute;
+    width: 50vh;
+    height: 34vh;
+    right: 0;
+    border: solid 2px rgb(12, 175, 216);
+    border-top-right-radius:10%;
+}
+
+.europa:hover > .europaimgdiv .europaimg{
+    width: 50vh;
+    height: 34vh;
+    border-top-right-radius:10%;
+}
+
+.europa:hover > .europastart{
+    position: absolute;
+    width: 48vh;
+    height: 18vh;
+    padding: 1vh;
+    right: 0;
+    bottom: -4.6vh;
+    border: solid 2px rgb(12, 175, 216);
+    border-bottom-right-radius:10%;
+    background-color: rgb(0, 0, 0, 0.8);
+    font-size: 80%;
+}
+
+.europaicone{
+    opacity: 0;
+}
+
+.europa:hover > .europastart .europaicone{
+    opacity: 1;
+}
+
+.europadetalhes{
+ width: 0;
+ height: 0;
+ opacity: 0;   
+}
+
+.europa:hover > .europastart .europadetalhes{
+    opacity: 1;
+    position: absolute;
+    right: -0.2%;
+    bottom: 0%;
+    padding: 2px;
+    width: 98.5%;
+    height: 3vh;
+    text-decoration: none;
+    color: rgb(12, 175, 216);
+    text-align: center;
+}
+
+.europahr{
+    opacity: 0;
+}
+
+.europa:hover > .europastart .europahr{
+    opacity: 1;
+    height: 0;
+    right: -0.6%;
+    width: 100%;
+    position: absolute;
+    border: solid 1px rgb(12, 175, 216);
+    bottom: 3vh;
+}
+
+
+/*oceania*/
+.oceania{
+    position: absolute; 
+    width: 3vh;
+    height: 3vh;
+    bottom: 21vh;
+    right: 28vh;
+    border-radius: 50%;
+    transition: 2s;
+}
+
+.oceaniatxt{
+    position: absolute;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    background-color: rgb(12, 175, 216);
+    border: solid 2px rgb(12, 175, 216);
+    transition: background-color 5s, height 2s, width 2s }
+
+.oceaniaimgdiv, .oceaniastart{
+    position: absolute;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.oceaniaimg{
+    width: 0;
+    height: 0;
+}
+
+.oceania:hover{
+    border-radius: 10%;
+    width: 100vh;
+    height: 50vh;
+    transition: 2s;
+}
+
+.oceania:hover >.oceaniatxt{
+    position: absolute;
+    left: -5vh;
+    width: 50vh;
+    height : 50vh;
+    border-radius: 0;
+    background-color: rgb(0, 0, 0, 0.8);
+    font-size: 80%;
+    transition: 2s;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 2vh;
+    overflow: auto;
+    border-top-left-radius:10%;
+    border-bottom-left-radius:10%;
+}
+
+.oceaniatxt::-webkit-scrollbar{
+    width: 0vh;
+}
+
+.oceania:hover > .oceaniatxt::-webkit-scrollbar{
+    transition: 2s;
+    width: 2vh;
+}
+
+.oceania:hover > .oceaniatxt::-webkit-scrollbar-thumb{
+    background:rgb(12, 175, 216) ;
+}
+
+.oceania:hover > .oceaniaimgdiv{
+    position: absolute;
+    width: 50vh;
+    height: 34vh;
+    right: 0;
+    border: solid 2px rgb(12, 175, 216);
+    border-top-right-radius:10%;
+}
+
+.oceania:hover > .oceaniaimgdiv .oceaniaimg{
+    width: 50vh;
+    height: 34vh;
+    border-top-right-radius:10%;
+}
+
+.oceania:hover > .oceaniastart{
+    position: absolute;
+    width: 48vh;
+    height: 18vh;
+    padding: 1vh;
+    right: 0;
+    bottom: -4.6vh;
+    border: solid 2px rgb(12, 175, 216);
+    border-bottom-right-radius:10%;
+    background-color: rgb(0, 0, 0, 0.8);
+    font-size: 80%;
+}
+
+.oceaniaicone{
+    opacity: 0;
+}
+
+.oceania:hover > .oceaniastart .oceaniaicone{
+    opacity: 1;
+}
+
+.oceaniadetalhes{
+ width: 0;
+ height: 0;
+ opacity: 0;   
+}
+
+.oceania:hover > .oceaniastart .oceaniadetalhes{
+    opacity: 1;
+    position: absolute;
+    right: -0.2%;
+    bottom: 0%;
+    padding: 2px;
+    width: 98.5%;
+    height: 3vh;
+    text-decoration: none;
+    color: rgb(12, 175, 216);
+    text-align: center;
+}
+
+.oceaniahr{
+    opacity: 0;
+}
+
+.oceania:hover > .oceaniastart .oceaniahr{
+    opacity: 1;
+    height: 0;
+    right: -0.6%;
+    width: 100%;
+    position: absolute;
+    border: solid 1px rgb(12, 175, 216);
+    bottom: 3vh;
+}
+
+.return{
+    position: absolute;
+    position: fixed;
+    margin: 2vh;
+    right: 2px;
+    cursor: pointer;
+
+    color: rgba(8, 154, 190, 0.9);
+    background: rgba(54, 58, 59, 0.4);
+    border-color: rgba(0, 0, 0, 0);
+
+    z-index: 5;
+}
+
+.casa{
+    position: absolute;
+    position: fixed;
+    margin: 2vh;
+    right: 14vh;
+    cursor: pointer;
+
+    color: rgba(8, 154, 190, 0.9);
+    background: rgba(54, 58, 59, 0.4);
+    border-color: rgba(0, 0, 0, 0);
+
+    z-index: 5;
+}
+
+.return:hover{
+    transition: 1s;
+    color: rgba(8, 154, 190, 0.9);
+    background: rgba(0,0,0,1);
+    border-color: rgba(8, 154, 190, 0.9);
+}
+
+.casa:hover{
+    transition: 1s;
+    color: rgba(8, 154, 190, 0.9);
+    background: rgba(0,0,0,1);
+    border-color: rgba(8, 154, 190, 0.9);
+}
